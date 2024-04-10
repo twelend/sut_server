@@ -83,7 +83,7 @@ async function getData(chatId) {
         const sheet = workbook.addWorksheet('SUT');
         sheet.columns = [
             { header: 'Id', key: 'id', width: 10 },
-            { header: 'ФИО Родителя', key: 'parentName', width: 30 },
+            { header: 'ФИО Родителя', key: 'parentname', width: 30 },
             { header: 'ФИО Ребенка', key: 'name', width: 30 },
             { header: 'Дата рождения', key: 'date', width: 20 },
             { header: 'Номер телефона', key: 'phone', width: 25 },
@@ -95,7 +95,7 @@ async function getData(chatId) {
             console.log(item)
             sheet.addRow({
                 id: item.id,
-                parentName: item.parentName,
+                parentname: item.parentname,
                 name: item.name,
                 date: item.date,
                 phone: item.phone,
